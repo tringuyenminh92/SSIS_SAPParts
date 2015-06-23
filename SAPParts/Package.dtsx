@@ -1,0 +1,2876 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/23/2015 7:36:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="GA92864526"
+  DTS:CreatorName="GA92864526\BeGa"
+  DTS:DTSID="{03028BC1-5D18-4B45-A407-471E78F079B1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2344.23"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{6E78FD6B-42E7-4874-B8ED-31C2C84C0794}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{70FA003F-D571-46C4-8C30-DBFB23D1E3C1}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\BeGa\Desktop\data">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material"
+              DTS:DTSID="{6A3AD6CA-DBA8-4A5F-A079-7495AD676DF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BNR short"
+              DTS:DTSID="{325CD5E6-BC03-429D-BED9-B54FC44512DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Type short description"
+              DTS:DTSID="{5C87FD0D-73F3-47C0-A279-BA873667A4AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MS"
+              DTS:DTSID="{6FAC8B00-B9D9-463D-8E84-67730C875896}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProcType"
+              DTS:DTSID="{AC80BCC4-6285-4DAA-8D63-8A65D1B20A45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PDT"
+              DTS:DTSID="{FA4F42A2-F051-4CA8-A9F3-47F82540D67E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IPT"
+              DTS:DTSID="{5F0BB82A-D7BE-4E0D-A5D0-C0AAE408D998}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DChl"
+              DTS:DTSID="{B9624B33-6F23-449D-8A6E-10CDCCCDDBAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="St"
+              DTS:DTSID="{2C18C00B-0A20-4D12-9DD8-61F21C0087C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MG 2"
+              DTS:DTSID="{B7B99A25-2DCE-45EA-9B00-0EBDAE2149D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Material Pricing Group"
+              DTS:DTSID="{494041C4-2614-4099-B54B-AB17BDA4DB51}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Stock"
+              DTS:DTSID="{C63818DD-F9FB-4B97-9ACA-66DCD1966C71}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Standard price"
+              DTS:DTSID="{DB7C8A19-9152-4F87-8875-AE986EBFD9CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="per"
+              DTS:DTSID="{7D692749-B7DD-4649-A764-03336F36DC91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Amount"
+              DTS:DTSID="{BB388A93-1A43-408B-B106-172B1443F528}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MPG"
+              DTS:DTSID="{CF73E2B7-7A1F-4BE6-A147-2CC6CECFCB12}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.DB_SETi_SQL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{86238931-3B51-4C59-87A2-E7EE767D0DC7}"
+      DTS:ObjectName="LocalHost.DB_SETi_SQL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=DB_SETi_SQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B11EBE3F-E763-410F-B742-92509049CA5D}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\BeGa\Desktop\data</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Clean current temp data"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2181E074-972C-42A5-8D6F-AC2110D53EBB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clean current temp data"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86238931-3B51-4C59-87A2-E7EE767D0DC7}"
+          SQLTask:SqlStatementSource="truncate table T_SAPPartsImport_Temp" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get File Path Assign To Variable"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{25EB514C-811A-4E3C-A625-96289E0AE3AA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get File Path Assign To Variable"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{86238931-3B51-4C59-87A2-E7EE767D0DC7}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="select top 1 Path from T_FilePath"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::FilePath" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load data from flat file"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0485D358-9131-42A1-BBB3-E4F19E7FDB02}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load data from flat file"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load data from flat file\Check Duplicate Condition"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Check Duplicate Condition"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Check Duplicate Condition.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Check Duplicate Condition.Inputs[Conditional Split Input].Columns[Count all]"
+                      cachedDataType="ui8"
+                      cachedName="Count all"
+                      lineageId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Count all]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Check Duplicate Condition.Outputs[DuplicatedRecords]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="DuplicatedRecords"
+                  synchronousInputId="Package\Load data from flat file\Check Duplicate Condition.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">(DT_I4)#{Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Count all]} &gt; 1</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">(DT_I4)[Count all] &gt; 1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load data from flat file\Check Duplicate Condition.Outputs[CorrectRecords]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="CorrectRecords"
+                  synchronousInputId="Package\Load data from flat file\Check Duplicate Condition.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load data from flat file\Check Duplicate Condition.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Load data from flat file\Check Duplicate Condition.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Check Duplicate Condition.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data from flat file\Check Duplicate Condition.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data from flat file\Check Duplicate Condition.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data from flat file\Check Duplicate Condition.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load data from flat file\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Material]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material]"
+                      name="Material"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[BNR short]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BNR short]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[BNR short]"
+                      name="BNR short"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Type short description]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Type short description]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Type short description]"
+                      name="Type short description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MS]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MS]"
+                      name="MS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[ProcType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProcType]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[ProcType]"
+                      name="ProcType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[PDT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PDT]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[PDT]"
+                      name="PDT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[IPT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IPT]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[IPT]"
+                      name="IPT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[DChl]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DChl]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[DChl]"
+                      name="DChl"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[St]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[St]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[St]"
+                      name="St"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MG 2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MG 2]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MG 2]"
+                      name="MG 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material Pricing Group]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Material Pricing Group]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material Pricing Group]"
+                      name="Material Pricing Group"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Total Stock]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Stock]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Total Stock]"
+                      name="Total Stock"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Standard price]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Standard price]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Standard price]"
+                      name="Standard price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[per]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[per]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[per]"
+                      name="per"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Amount]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]"
+                      name="Amount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MPG]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MPG]"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MPG]"
+                      name="MPG"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Material" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BNR short]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BNR short" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Type short description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Type short description" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MS" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProcType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ProcType" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PDT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PDT" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IPT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IPT" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DChl]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DChl" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[St]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="St" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MG 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MG 2" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Material Pricing Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Material Pricing Group" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Total Stock]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Total Stock" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Standard price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Standard price" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[per]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="per" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Amount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Amount" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MPG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MPG" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Group by Material to check duplicate"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Group by Material to check duplicate"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Group by Material to check duplicate.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Group by Material to check duplicate.Inputs[Aggregate Input 1].Columns[Material]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Count all]"
+                      dataType="ui8"
+                      lineageId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Count all]"
+                      name="Count all">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Load data from flat file\0:invalid}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">2</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Material]"
+                      name="Material">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Material]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Material]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[BNR short]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="BNR short"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[BNR short]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Type short description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Type short description"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Type short description]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[MS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MS"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MS]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[ProcType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ProcType"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[ProcType]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[PDT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PDT"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[PDT]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[IPT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IPT"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[IPT]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[DChl]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DChl"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[DChl]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[St]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="St"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[St]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[MG 2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MG 2"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MG 2]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Material Pricing Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material Pricing Group"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Material Pricing Group]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Total Stock]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Stock"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Total Stock]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Standard price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Standard price"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Standard price]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[per]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="per"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[per]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Amount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Amount"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Amount]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[MPG]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MPG"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MPG]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Right Input].Columns[Material]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Load data from flat file\Sort for join.Outputs[Sort Output].Columns[Material]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Material]"
+                      name="Material"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Material]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[BNR short]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[BNR short]"
+                      name="BNR short">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[BNR short]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Type short description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Type short description]"
+                      name="Type short description">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Type short description]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MS]"
+                      name="MS">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[MS]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[ProcType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[ProcType]"
+                      name="ProcType">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[ProcType]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[PDT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[PDT]"
+                      name="PDT">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[PDT]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[IPT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[IPT]"
+                      name="IPT">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[IPT]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[DChl]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[DChl]"
+                      name="DChl">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[DChl]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[St]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[St]"
+                      name="St">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[St]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MG 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MG 2]"
+                      name="MG 2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[MG 2]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Material Pricing Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Material Pricing Group]"
+                      name="Material Pricing Group">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Material Pricing Group]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Total Stock]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Total Stock]"
+                      name="Total Stock">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Total Stock]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Standard price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Standard price]"
+                      name="Standard price">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Standard price]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[per]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[per]"
+                      name="per">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[per]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Amount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Amount]"
+                      name="Amount">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[Amount]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MPG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MPG]"
+                      name="MPG">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input].Columns[MPG]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Multicast.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Load data from flat file\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Multicast for checking and joining"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast for checking and joining">
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Multicast for checking and joining.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Multicast for checking and joining.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Load data from flat file\Multicast for checking and joining.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load data from flat file\Multicast for checking and joining.Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Load data from flat file\Multicast for checking and joining.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load data from flat file\Multicast for checking and joining.Outputs[Multicast Output 4]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 4"
+                  synchronousInputId="Package\Load data from flat file\Multicast for checking and joining.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Sort for join"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort for join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Sort for join.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort for join.Inputs[Sort Input].Columns[Material]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material"
+                      lineageId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Material]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Sort for join.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort for join.Outputs[Sort Output].Columns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort for join.Outputs[Sort Output].Columns[Material]"
+                      name="Material"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1].Columns[Material]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\Sort source for join"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort source for join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[Material]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[BNR short]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="BNR short"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[BNR short]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[Type short description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Type short description"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Type short description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[MS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MS"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MS]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[ProcType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ProcType"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[ProcType]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[PDT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PDT"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[PDT]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[IPT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IPT"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[IPT]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[DChl]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DChl"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[DChl]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[St]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="St"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[St]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[MG 2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MG 2"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MG 2]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[Material Pricing Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material Pricing Group"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material Pricing Group]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[Total Stock]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Stock"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Total Stock]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[Standard price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Standard price"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Standard price]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[per]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="per"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[per]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[Amount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Amount"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input].Columns[MPG]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MPG"
+                      lineageId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MPG]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Material]"
+                      name="Material"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[BNR short]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[BNR short]"
+                      name="BNR short">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[BNR short]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Type short description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Type short description]"
+                      name="Type short description">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Type short description]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MS]"
+                      name="MS">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MS]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[ProcType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[ProcType]"
+                      name="ProcType">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[ProcType]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[PDT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[PDT]"
+                      name="PDT">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[PDT]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[IPT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[IPT]"
+                      name="IPT">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[IPT]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[DChl]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[DChl]"
+                      name="DChl">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[DChl]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[St]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[St]"
+                      name="St">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[St]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MG 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MG 2]"
+                      name="MG 2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MG 2]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Material Pricing Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Material Pricing Group]"
+                      name="Material Pricing Group">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Material Pricing Group]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Total Stock]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Total Stock]"
+                      name="Total Stock">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Total Stock]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Standard price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Standard price]"
+                      name="Standard price">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Standard price]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[per]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[per]"
+                      name="per">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[per]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Amount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[Amount]"
+                      name="Amount">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MPG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output].Columns[MPG]"
+                      name="MPG">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output].Columns[MPG]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data from flat file\T_SAPPartsImport_Temp"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="T_SAPPartsImport_Temp"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[T_SAPPartsImport_Temp]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.DB_SETi_SQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.DB_SETi_SQL]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[Material]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[Material]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Material]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[MS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MS"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MS]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MS]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[ProcType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ProcType"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[ProcType]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[ProcType]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[PDT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PDT"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[PDT]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[PDT]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[IPT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IPT"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[IPT]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[IPT]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[DChl]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DChl"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[DChl]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[DChl]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[per]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="per"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[Per]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[per]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[MPG]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MPG"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MPG]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MPG]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[Type short description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Type short description"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MaterialNumber]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Type short description]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[Standard price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Standard price"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[StandardPrice]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Standard price]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[MG 2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MG 2"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MG2]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[MG 2]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[BNR short]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="BNR short"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[BNRShort]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[BNR short]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[Material Pricing Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Material Pricing Group"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MaterialPricingGroup]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Material Pricing Group]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[Amount]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Amount"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[ListPrice]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Amount]" />
+                    <inputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].Columns[Total Stock]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Stock"
+                      externalMetadataColumnId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[AvailableQuantity]"
+                      lineageId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output].Columns[Total Stock]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[SapPartId]"
+                      dataType="i4"
+                      name="SapPartId" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[Material]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Material" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MaterialNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="MaterialNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[StandardPrice]"
+                      dataType="r8"
+                      name="StandardPrice" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MS" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[Per]"
+                      dataType="i4"
+                      name="Per" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[ProcType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ProcType" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[IPT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IPT" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[DChl]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DChl" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[PDT]"
+                      dataType="i4"
+                      name="PDT" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MG2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MG2" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[ListPrice]"
+                      dataType="r8"
+                      name="ListPrice" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[Discount]"
+                      dataType="r8"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[LastUpdatedBy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastUpdatedBy" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[LastUpdatedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastUpdatedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[AvailableQuantity]"
+                      dataType="r8"
+                      name="AvailableQuantity" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[BNRShort]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="BNRShort" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MPG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MPG" />
+                    <externalMetadataColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input].ExternalColumns[MaterialPricingGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      length="250"
+                      name="MaterialPricingGroup" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data from flat file\T_SAPPartsImport_Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data from flat file\T_SAPPartsImport_Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data from flat file\T_SAPPartsImport_Temp.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load data from flat file.Paths[Aggregate Output 1]"
+              endId="Package\Load data from flat file\Check Duplicate Condition.Inputs[Conditional Split Input]"
+              name="Aggregate Output 1"
+              startId="Package\Load data from flat file\Group by Material to check duplicate.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Load data from flat file.Paths[CorrectRecords]"
+              endId="Package\Load data from flat file\Sort for join.Inputs[Sort Input]"
+              name="CorrectRecords"
+              startId="Package\Load data from flat file\Check Duplicate Condition.Outputs[CorrectRecords]" />
+            <path
+              refId="Package\Load data from flat file.Paths[DuplicatedRecords]"
+              endId="Package\Load data from flat file\Multicast.Inputs[Multicast Input 1]"
+              name="DuplicatedRecords"
+              startId="Package\Load data from flat file\Check Duplicate Condition.Outputs[DuplicatedRecords]" />
+            <path
+              refId="Package\Load data from flat file.Paths[Flat File Source Output]"
+              endId="Package\Load data from flat file\Multicast for checking and joining.Inputs[Multicast Input 1]"
+              name="Flat File Source Output"
+              startId="Package\Load data from flat file\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Load data from flat file.Paths[Merge Join Output]"
+              endId="Package\Load data from flat file\T_SAPPartsImport_Temp.Inputs[OLE DB Destination Input]"
+              name="Merge Join Output"
+              startId="Package\Load data from flat file\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Load data from flat file.Paths[Multicast Output 1]"
+              endId="Package\Load data from flat file\Group by Material to check duplicate.Inputs[Aggregate Input 1]"
+              name="Multicast Output 1"
+              startId="Package\Load data from flat file\Multicast for checking and joining.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Load data from flat file.Paths[Multicast Output 3]"
+              endId="Package\Load data from flat file\Sort source for join.Inputs[Sort Input]"
+              name="Multicast Output 3"
+              startId="Package\Load data from flat file\Multicast for checking and joining.Outputs[Multicast Output 3]" />
+            <path
+              refId="Package\Load data from flat file.Paths[Sort Output]"
+              endId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Load data from flat file\Sort source for join.Outputs[Sort Output]" />
+            <path
+              refId="Package\Load data from flat file.Paths[Sort Output1]"
+              endId="Package\Load data from flat file\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Load data from flat file\Sort for join.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{7317FF5A-ABD9-4253-BB25-4AACD4F9FF0C}"
+      DTS:From="Package\Get File Path Assign To Variable"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Clean current temp data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1381FB11-D898-4EDD-B679-D553E19DDCCC}"
+      DTS:From="Package\Clean current temp data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load data from flat file" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="231.204188481676,42.2198952879582"
+          Id="Package\Get File Path Assign To Variable"
+          TopLeft="29.6544502617801,33.4240837696335" />
+        <NodeLayout
+          Size="196.020942408377,42.2198952879582"
+          Id="Package\Clean current temp data"
+          TopLeft="289.256544502618,34.1780104712042" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="260.858638743456,54.9109947643979">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.3979057591622,0"
+              Start="0,0"
+              End="20.8979057591622,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.8979057591622,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="188.984293193718,42.2198952879582"
+          Id="Package\Load data from flat file"
+          TopLeft="285.486910994764,137.717277486911" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="383.623036649215,76.3979057591623">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.3193717277487"
+              Start="0,0"
+              End="0,53.8193717277487">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.8193717277487" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load data from flat file">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="153.298429319372,42.2198952879582"
+          Id="Package\Load data from flat file\Flat File Source"
+          TopLeft="122.890052356021,17.0890052356021" />
+        <NodeLayout
+          Size="253.821989528796,42.2198952879582"
+          Id="Package\Load data from flat file\Group by Material to check duplicate"
+          TopLeft="261.899775617053,103.970082273747" />
+        <NodeLayout
+          Size="204.062827225131,42.2198952879582"
+          Id="Package\Load data from flat file\Check Duplicate Condition"
+          TopLeft="8.652206432311,109.498878085266" />
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Aggregate Output 1]"
+          TopLeft="261.899775617053,127.844427823485">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-49.1847419596111,0"
+              Start="0,0"
+              End="-41.6847419596111,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-41.6847419596111,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="122.638743455498,42.2198952879582"
+          Id="Package\Load data from flat file\Multicast"
+          TopLeft="17.6275243081526,227.614061331339" />
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[DuplicatedRecords]"
+          TopLeft="78.4766891049613,151.718773373224">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.8952879581151"
+              Start="0,0"
+              End="0,68.3952879581151">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68.3952879581151" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-41.317578125,28.3929564790576,82.63515625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="239.24607329843,42.2198952879582"
+          Id="Package\Load data from flat file\Multicast for checking and joining"
+          TopLeft="358.07928197457,19.8175018698579" />
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Flat File Source Output]"
+          TopLeft="276.188481675393,39.5632011967091">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.8908002991772,0"
+              Start="0,0"
+              End="74.3908002991772,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="74.3908002991772,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Multicast Output 1]"
+          TopLeft="439.16130640738,62.037397157816">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-50.3505360259286,41.9326851159312"
+              Start="0,0"
+              End="-50.3505360259286,34.4326851159312">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.9402155619471" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.9402155619471"
+                    Point2="0,16.9402155619471"
+                    Point3="-4,16.9402155619471" />
+                  <mssgle:LineSegment
+                    End="-46.3505360259286,16.9402155619471" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-46.3505360259286,16.9402155619471"
+                    Point2="-50.3505360259286,16.9402155619471"
+                    Point3="-50.3505360259286,20.9402155619471" />
+                  <mssgle:LineSegment
+                    End="-50.3505360259286,34.4326851159312" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="137.214659685864,42.2198952879582"
+          Id="Package\Load data from flat file\Sort for join"
+          TopLeft="163.314884068811,225.783096484667" />
+        <NodeLayout
+          Size="171.895287958116,42.2198952879582"
+          Id="Package\Load data from flat file\Sort source for join"
+          TopLeft="566.414360508601,105.805534779357" />
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Multicast Output 3]"
+          TopLeft="516.243330840189,62.037397157816">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136.11867364747,43.7681376215408"
+              Start="0,0"
+              End="136.11867364747,36.2681376215408">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.6817125830126" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.6817125830126"
+                    Point2="0,17.6817125830126"
+                    Point3="4,17.6817125830126" />
+                  <mssgle:LineSegment
+                    End="132.11867364747,17.6817125830126" />
+                  <mssgle:CubicBezierSegment
+                    Point1="132.11867364747,17.6817125830126"
+                    Point2="136.11867364747,17.6817125830126"
+                    Point3="136.11867364747,21.6817125830126" />
+                  <mssgle:LineSegment
+                    End="136.11867364747,36.2681376215408" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[CorrectRecords]"
+          TopLeft="143.360757915732,151.718773373224">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.5614559960111,74.0643231114435"
+              Start="0,0"
+              End="88.5614559960111,66.5643231114435">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9714492327071" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9714492327071"
+                    Point2="0,29.9714492327071"
+                    Point3="4,29.9714492327071" />
+                  <mssgle:LineSegment
+                    End="84.5614559960111,29.9714492327071" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.5614559960111,29.9714492327071"
+                    Point2="88.5614559960111,29.9714492327071"
+                    Point3="88.5614559960111,33.9714492327071" />
+                  <mssgle:LineSegment
+                    End="88.5614559960111,66.5643231114435" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="10.0606303417556,34.9714492327071,68.4401953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="132.69109947644,42.2198952879582"
+          Id="Package\Load data from flat file\Merge Join"
+          TopLeft="376.31712789828,223.503365744203" />
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Sort Output]"
+          TopLeft="652.362004487659,148.025430067315">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-209.699326851159,75.4779356768885"
+              Start="0,0"
+              End="-209.699326851159,67.9779356768885">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.7389678384442" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.7389678384442"
+                    Point2="0,37.7389678384442"
+                    Point3="-4,37.7389678384442" />
+                  <mssgle:LineSegment
+                    End="-205.699326851159,37.7389678384442" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-205.699326851159,37.7389678384442"
+                    Point2="-209.699326851159,37.7389678384442"
+                    Point3="-209.699326851159,41.7389678384442" />
+                  <mssgle:LineSegment
+                    End="-209.699326851159,67.9779356768885" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Sort Output1]"
+          TopLeft="300.529543754675,245.753178758414">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.7875841436049,0"
+              Start="0,0"
+              End="68.2875841436049,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="68.2875841436049,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="200.041884816754,42.2198952879582"
+          Id="Package\Load data from flat file\T_SAPPartsImport_Temp"
+          TopLeft="567.599102468213,219.715781600598" />
+        <EdgeLayout
+          Id="Package\Load data from flat file.Paths[Merge Join Output]"
+          TopLeft="509.008227374719,242.71952131638">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.5908750934932,0"
+              Start="0,0"
+              End="51.0908750934932,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="51.0908750934932,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load data from flat file\T_SAPPartsImport_Temp">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
